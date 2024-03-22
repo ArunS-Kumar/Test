@@ -1,0 +1,210 @@
+1. PEAR stands for
+	
+	PEAR stands for “PHP Extension and Application Repository”. PEAR is a framework and repository for all of the reusable PHP components
+
+2. Difference between $message and $$message?
+
+	$message is used to store variable data. $$message can be used to store variable of a variable
+
+Example:
+	$var1 = 'first’;
+	$$var1= 'secone';
+
+	This can be interpreted as $first = 'secone';
+	$$variable we can use variable value as variable.
+
+3. PHP a case-sensitive language?
+
+	partial case-sensitive. variable names are completely case-sensitive but function names are not
+
+4. “echo” and “print” in PHP
+
+	- echo has no return value while print has a return value of 1
+	- echo can take multiple parameters, while print can take one argument
+
+5. different types of Array
+
+	- Indexed Array - its contain numeric keys.
+	- Associative Array - its contain string as keys
+	- Multidimensional Array - array containing one or more arrays
+
+6. types of errors
+
+	- Notices: Notices are non-critical errors that can occur during the execution of the script. These are not visible to users. Example: Accessing an undefined variable.
+
+	- Warnings: These are more critical than notices. Warnings don’t interrupt the script execution. By default, these are visible to the user. Example: include() a file that doesn’t exist.
+	
+	- Fatal: This is the most critical error type which, when occurs, immediately terminates the execution of the script. Example: Accessing a property of a non-existent object or require() a non-existent file.
+
+7. traits
+	
+	PHP is not supportable for multiple inheritances. so we use traits to create reusable codes.
+
+8. used method for hashing passwords
+
+	- crypt()
+	- it provides a large number of hashing algorithms. eg: sha1, sha256, or md5
+
+9. Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering
+
+
+10. PHP Parser is a library that takes a source code written in PHP, passes it through a lexical analyzer, and creates its respective syntax tree.
+
+
+11. set infinite execution time
+	
+	-  set_time_limit(0) in php.ini file.
+
+
+12. open a file in PHP - fopen()
+
+
+13. get the IP address - $_SERVER["REMOTE_ADDR"];
+
+
+14. magic methods
+
+	__construct()
+	__destruct()
+	__set()
+	__get()
+	__call()
+	__toString()
+	__sleep()
+	__wakeup()
+	__isset()
+	__unset()
+	__autoload()
+	__clone()
+
+
+
+1. What are PHP generators, and how can they help with memory efficiency?
+
+that provide a more memory-efficient way to iterate over a large set of data or generate sequences of values. Unlike traditional arrays or iterators, which store all data in memory at once, generators allow you to create and yield values on-the-fly, only generating and keeping in memory the values that are needed at a given moment.
+
+2. What is the purpose of the yield keyword in PHP, and how is it used in the context of generators?
+	
+	In PHP, the yield keyword is used within a generator function to yield values one at a time during iteration. Generators are special functions that allow you to create an iterator for generating sequences of values on-the-fly, without having to generate and store all values in memory upfront
+
+eg:
+	function fibonacciGenerator($limit) {
+	    $a = 0;
+	    $b = 1;
+	    
+	    for ($i = 0; $i < $limit; $i++) {
+	        yield $a;
+	        
+	        // Calculate the next Fibonacci number
+	        [$a, $b] = [$b, $a + $b];
+	    }
+	}
+
+	// Create a generator instance
+	$limit = 10;
+	$generator = fibonacciGenerator($limit);
+
+	// Iterate over the generated Fibonacci numbers
+	foreach ($generator as $number) {
+	    echo $number . ' ';
+	}
+
+3. How does PHP support multithreading and asynchronous programming?
+	Parallel Processing:
+		- The parallel extension, available as a PECL package, allows you to execute code blocks in parallel processes. It's not true multithreading but parallel processing using separate processes.
+		- With the parallel extension, you can execute tasks concurrently, which can be useful for CPU-bound tasks. 
+
+	eg:
+		<?php
+			$runtime = new parallel\Runtime();
+
+			$future = $runtime->run(function () {
+			    sleep(2);
+			    return "Hello from parallel process!";
+			});
+
+			echo "Main process doing something...\n";
+
+			$result = $future->value();
+			echo "Main process received: $result\n";
+		?>
+
+4. What are some practices for optimizing database queries in PHP applications?
+	
+	.Limit the Number of Rows Returned
+	.Optimize JOIN Operations
+	.Cache Query Results
+	.Use Prepared Statements
+	.Avoid SELECT
+	.Monitor and Analyze Query Performance
+
+5. Discuss the differences between using the mysqli extension and the PDO extension for database connectivity in PHP.
+	.MySQLi is a replacement for the mysql functions, with object-oriented and procedural versions. It has support for prepared statements.
+	.PDO (PHP Data Objects) is a general database abstraction layer with support for MySQL among many other databases. It provides prepared statements, and significant flexibility in how data is returned.
+
+6. Discuss the use of the list() function in PHP for assigning variables from an array
+	 - PHP, the list() function is a language construct used for assigning variables from an array's values in a concise and convenient way
+	 eg: 
+	 	// Example array with values
+		$array = [10, 20, 30];
+
+		// Assigning values from the array using list()
+		list($a, $b, $c) = $array;
+
+		echo "a: $a, b: $b, c: $c"; // Output: a: 10, b: 20, c: 30
+
+
+7. Explain the concept of "method chaining" in PHP. Provide an example of how you can use method chaining to improve code readability.
+	- Method chaining is a programming technique in which multiple method calls on the same object are chained together in a single statement
+	eg:
+		// Using method chaining
+		$result = (new StringBuilder())
+		    ->append('Hello, ')
+		    ->prepend('Welcome, ')
+		    ->toUpper()
+		    ->append('World!')
+		    ->toUpper();
+
+8. Explain the concept of "serialization" and "deserialization" in PHP. What are some scenarios where you would use these techniques?
+	- Serialization and deserialization are techniques used in programming to convert complex data structures, such as objects or arrays, into a format that can be easily stored, transmitted, or later reconstructed
+	1. Storing Data
+	2. Session Management
+	3. Caching
+	4. Data Transfer
+
+9. Domain-Driven Design (DDD)
+
+	. Domain-Driven Design (DDD) is a software development approach 
+	. It focuses on creating software systems based on a deep understanding
+
+
+	Entities and Value Objects:
+		DDD identifies key building blocks like "Entities" (things with a distinct identity) and "Value Objects" (descriptive elements without a distinct identity). Understanding and modeling these concepts are crucial for creating a meaningful system.
+
+	Aggregates:
+		Aggregates are groups of related objects treated as a single unit. They help maintain consistency and simplify interactions within a specific part of the system.
+
+	Repositories:
+		Repositories provide a way to access and store aggregates. They abstract away the details of data storage, allowing the focus to remain on the business logic.
+
+	Domain Services:
+		Sometimes, certain operations don't naturally fit into an entity or value object. DDD introduces "Domain Services" to handle such operations in a stateless manner.
+
+	Domain Events:
+		Domain Events represent meaningful changes within the system. They help in maintaining consistency and triggering responses to changes.
+
+
+10. Authentication vs Authorization
+
+	Authentication is the process of verifying who someone is. Authorization gives those users permission to access a resource.
+
+11. Advandage of ORMs
+	.Object-Oriented Approach
+	.Increased Productivity - developers can focus more on business logic and less on low-level database SQL
+	.Database Independence - Work with any databases
+	.Improved Security.
+
+12. Get array keys - array_key
+	
+13. What is Stored Procedures?
+	A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again. So if you have an SQL query that you write over and over again, save it as a stored procedure, and then just call it to execute it.

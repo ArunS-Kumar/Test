@@ -1,0 +1,6 @@
+1. pub/sub
+
+	. Google Cloud Pub/Sub is a messaging service provided by Google Cloud Platform (GCP).
+	. It used for building real-time, event-driven systems. It allows you to send and receive messages between independent applications
+	. Create a Pub/Sub topic, which serves as a channel for sending messages
+	. Create a subscription to a topic to receive messages. Subscriptions allow multiple consumers to receive messages from a single topic

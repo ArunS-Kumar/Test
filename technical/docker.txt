@@ -1,0 +1,32 @@
+Docker
+
+1. pod - Collection of multiple containers
+
+2. Dockerfile
+
+	. Dockerfile is like a recipe or set of instructions that tells Docker how to create a "Docker image" for your application
+	. It's a set of instructions that tells Docker how to create a Docker image
+
+3. Docker Image is like a snapshot of a recipe.
+
+	. It's a static, unchangeable blueprint of an application.
+	. Contains all the ingredients and instructions to cook a particular dish (run an application).
+	. Immutable; you can't modify it directly.
+	. Used as a starting point to create containers.
+
+4. Docker Container is like a serving of a dish.
+
+	. It's a running instance of an image.
+	. Can be started, stopped, and thrown away.
+	. Mutable; you can interact with it, make changes, and save those changes.
+	. Runs the application with all its dependencies.
+
+5. Docker cmds
+
+	. docker build -t image_name[:tag]
+	. docker pull image_name
+	. docker images
+	. docker run image_name
+	. docker ps
+	. docker stop container_id
+	. docker rm container_id

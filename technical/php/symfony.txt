@@ -1,0 +1,37 @@
+Symfony
+
+
+1. Autowiring
+	. In Symfony, autowiring is a feature that allows you to automatically inject dependencies (services) into your classes without explicitly specifying them in your service configuration
+
+
+1. Templete engin - twig
+	{{ ... }}, used to display the content of a variable or the result of evaluating an expression;
+	{% ... %}, used to run some logic, such as a conditional or a loop;
+	{# ... #}, used to add comments to the template (unlike HTML comments, these comments are not
+
+2. ORM - Doctrine ORM
+
+3. config/routes.yaml
+	app_lucky_number:
+	    path: /lucky/number
+	    controller: App\Controller\LuckyController::number
+
+4. annotation
+. Instead of defining your route in YAML, Symfony also allows you to use annotation or attribute routes
+	/**
+	* @Route("/lucky/number")
+	*/
+	public function number(): Response
+	{
+	    // this looks exactly the same
+	}
+
+
+5. Redies
+. No sql data store
+. witten in c language
+. very fast 
+
+
+6. service containers

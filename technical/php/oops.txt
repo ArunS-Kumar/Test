@@ -1,0 +1,298 @@
+Note:
+
+
+1 .Objects 
+
+Objects share the two common key characteristics:
+
+1. State
+2. Behavior
+
+. Object holds its state in properties
+. An object also exposes its behavior via methods
+
+
+
+2. Class
+
+. A class is a blueprint for creating objects.
+. If a class name is a noun, it should be in the singular noun.
+. Define each class in a separate PHP file.
+. The $this variable references the current object of the class
+
+
+
+3. Access modifiers
+
+. The public access modifier allows you to access properties and methods from both inside and outside of the class.
+. The private access modifier prevents you from accessing properties and methods from the outside of the class.
+
+
+
+4. Constructor
+
+When you create an instance of the class, PHP automatically calls the constructor method
+
+
+
+5. Constructor promotion
+
+PHP 8.0 introduced the new concept called constructor promotion that promotes the constructor’s arguments to properties, constructor parameter includes an access modifier.
+
+class BankAccount
+{
+	function __construct( private $accountNumber, private $balance)
+	{	
+	}
+}
+
+
+
+6. Destructor
+
+PHP automatically invokes the destructor when the object is deleted or the script is terminated
+
+
+
+7. Typed properties
+
+. Typed properties include modifiers (private, protected, and public) and types (except void and callable).
+. Typed properties have uninitialized states, not null like untyped properties
+. It wont allow null in the properties.
+
+
+
+8. Inheritance
+
+. Inheritance allows a class to reuse the code of another class without duplicating it.
+. Use the extends keyword to define one class that inherits from another class.
+. php supports Multilevel inheritance and not supports Multiple inheritance.
+
+
+
+9. PHP Override Method:
+
+1. Method overriding allows a child class to define a method that overrides (or replaces) the method already provided by its parent class.
+2. Use the final method when you don’t want a child class’s method to override a parent class’s method.
+3. You can use the parent::methodName() syntax to call the overridden method from within the child class if needed.
+4. PHP 8.0 introduced the override keyword, which allows you to explicitly declare that a method in a child class is intended to override a method in the parent class. This helps improve code maintainability and provides better error messages in case of method signature mismatches
+
+
+
+10. Protected
+
+Use protected properties and methods can only be accessed within the class and in any child classes of the class.
+
+
+
+11. Abstract
+
+. An abstract class can have properties and methods as a regular class.
+. It cannot be instantiated.
+. A class that extends an abstract class needs to implement the abstract methods of the abstract class.
+
+
+
+12. Interface
+
+. PHP interface provides a contract for other classes to follow.
+. An interface consists of methods that contain no implementation, all methods of the interface are abstract methods.
+. An interface can also include constants.
+. An interface can't have properties.
+
+
+
+13. Abstraction
+
+. Abstraction is one of the fundamental principles of Object-Oriented Programming (OOP)
+. It used to simplifying complex systems by breaking them into smaller, more manageable parts.
+. Its allow us to focusing on the essential characteristics while ignoring irrelevant details
+. Abstraction provides a way to create abstract classes, interfaces, and methods that define a blueprint for concrete classes to follow
+
+
+
+13. Polymorphism
+
+. Abstraction is a key enabler of polymorphism
+. It allows objects of different classes to be treated as instances of a common superclass
+. Polymorphism is the ability of an object to take on many forms.
+. Use interfaces or abstract classes to implement polymorphism in PHP.
+
+
+
+14. Static
+
+. Since a static method is bound to a class, not an individual instance of the class, you cannot access $this inside the method
+. You can access a special variable called self. The self variable means the current class.
+
+
+
+15. Late static binding
+
+. Instead of using the self, you use the static keyword that references an exact class that is called at runtime.
+
+class Vehicle {
+    protected static $type = "Generic Vehicle";
+
+    public static function getType() {
+        echo static::$type . "\n";
+    }
+
+    public static function describe() {
+        echo "This is a " . static::$type . "\n";
+    }
+}
+
+class Car extends Vehicle {
+    protected static $type = "Car";
+}
+
+class Motorcycle extends Vehicle {
+    protected static $type = "Motorcycle";
+}
+
+// Using Late Static Binding
+Vehicle::getType();       // Output: Generic Vehicle
+Car::getType();           // Output: Car
+Motorcycle::getType();    // Output: Motorcycle
+
+Vehicle::describe();      // Output: This is a Generic Vehicle
+Car::describe();          // Output: This is a Car
+Motorcycle::describe();   // Output: This is a Motorcycle
+
+
+16. Magic Methods
+
+__call() - non-existent or inaccessible instance method.
+	eg: class DynamicMethodHandler {
+		    public function __call($method, $arguments) {
+		        echo "Calling method: $method with arguments: " . implode(', ', $arguments);
+		    }
+		}
+
+	$handler = new DynamicMethodHandler();
+	$handler->exampleMethod("arg1", "arg2");
+
+__callStatic() - non-existent or inaccessible static method.
+
+__get() - when reading the value from a non-existing or inaccessible property
+__set() - when writing a value to a non-existing or inaccessible property
+__unset() - when unset() is used on a non-existing or inaccessible property.
+
+__invoke() - when an class object is called as a function.
+	eg: class CallableClass {
+		    public function __invoke($param) {
+		        echo "Invoked with parameter: $param";
+		    }
+		}
+
+		$callableObject = new CallableClass();
+		$callableObject("Hello, World!");
+
+
+
+17. Anonymous Class
+
+. An anonymous class is a class without a declared name.
+. ex:
+	$logger = new class {
+	    public function log(string $message): void
+	    {
+	        echo $message . '<br>';
+	    }
+	};
+
+	$logger->log('Hello');
+
+
+
+
+18. Namespaces
+
+	- namespaces are used to organize and group related classes.
+	- it used to avoid the naming conflicts and improve code organization
+
+	1. Avoiding Naming Conflicts
+	2. Code Organization
+	3. PSR Standards(PSR-4)
+
+. Namespaces can be used to group related classes.
+. Namespaces allow the same name to be used for more than one class.
+
+
+
+19. try…catch
+
+. Instead of halting the script, you can handle the exceptions gracefully. This is known exception handling
+
+
+
+20. Composition
+
+.  To create an association between classes, we instantiate a new class object inside the constructor of the class we want to use it.
+
+
+
+21. Entity
+
+. when you define a call it represents a real world objects ex: person, product, owner, order, blog post or comments. 
+. It represents a real world concepts, For example person is class properties are first name, last name and age. 
+
+
+
+22.Closures
+
+. Basically a closure in PHP is a function that can be created without a specified name - an anonymous function.
+
+	$n = "Mike";
+	$calc = function() {
+	    return "Hello " . $n;
+	}
+	$calc();
+
+
+23. yield
+
+. The heart of a generator function is the yield keyword. In its simplest form, a yield statement looks much like a return statement, except that instead of stopping execution of the function and returning, yield instead provides a value to the code looping over the generator and pauses execution of the generator function.
+
+
+
+23. Smarty
+
+. Smarty is a web template system written in PHP
+. It is extremely fast
+. It seprate the php code from forms.
+ex: 
+	PHP - <?=$foo?>, <?=$foo['bar'],?>
+	Smarty - {$foo}, {$foo.bar}
+
+
+24. Exception
+
+. An exception is an object that describes an error or unexpected behaviour of a PHP script
+. User defined functions and classes can also throw exceptions
+. If an exception is not caught, a fatal error will occur with an "Uncaught Exception" message.
+. When an exception is thrown, the code following it will not be executed.
+
+
+
+25. Types of Dependency Injection
+
+. Constructor Injection
+. Setter Injection - Unlike Constructor injection which makes it required to have its dependencies passed, setter injection can be used to have optional dependencies
+. Interface Injection
+
+
+
+26. Finally
+
+. The finally block always executes after the try or catch block
+
+
+27. set_exception_handler
+
+. used to provide global exception handling.
+
+28. Abstraction in PHP
+
+It allows you to hide the unnecessary details and expose only the essential features, making the code more manageable, reusable, and focused on high-level concepts.

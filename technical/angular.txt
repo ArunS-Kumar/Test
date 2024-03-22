@@ -1,0 +1,56 @@
+Angular
+
+1. reuse the div
+
+	<ng-template #MsgRef >
+	        {{ mycontent }}
+	</ng-template>
+
+2. Components
+
+	. Angular applications are built using components
+	. Each component encapsulates its own logic, view, and styles
+
+
+3. Directives
+
+	. its allowes dynamic behavior to elements
+	. ngIf, ngFor, and ngSwitch
+
+
+4. RxJS Integration
+
+	. RxJS is based on the concept of Observables.
+	. Angular applications used handling asynchronous operations using Observables
+	. Subscriptions are the way you "listen" to an Observable. When you subscribe to an Observable, you receive notifications for each emitted value, error, or completion signal
+
+
+5. Lazy Loading:
+
+	. Angular supports lazy loading, allowing you to load specific modules and components only when needed. This can help optimize the initial loading time of your application
+
+
+6. Cmd to create Components
+
+	. ng generate component first
+
+
+7. decorators
+
+	. decorators in Angular are like instructions or labels that you can attach to classes, properties, methods, or function parameters to provide additional information or modify their behavior. Decorators are prefixed with the @ symbol and are used to configure and enhance various parts of your Angular application
+	eg;
+
+		1. @Component
+		2. @Directive
+		3. @Injectable
+		4. @NgModule
+		5. @Input and @Output
+		6. @ViewChild and @ViewChildren
+
+
+8. Memory leak angular
+
+	. Memory leaks in Angular can occur when a web application doesn't release memory that is no longer needed.
+	. Unclosed Subscriptions
+	.
+

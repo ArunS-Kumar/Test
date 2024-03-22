@@ -1,0 +1,289 @@
+Angular project learning path
+
+target today 
+
+Section 4: Debugging - 10 mins - Done
+Section 5: Components and databinding 1hr 25mins
+Section 6: Components and databinding - In Course Project 31mins
+
+target tomorrow
+
+Section 7: Directive 47mins
+Section 8: Directive - In Course Project - 7 mins
+Section 13: observables - 45mins
+Section 14: observables - In Course Project - 6mins
+
+section 17: pipes - 37mins
+
+target in leave
+
+Section 25: Bonus: nerx - 4hr
+
+
+sonarqube
+
+FF_GA_EVENTS_BUY_AGAIN_PRODUCT_QUANTITY_PICKER_INTERACTION
+
+
+interactions
+
+
+git checkout -b feature/OBE-599-tracking-fe-set-reason-for-the-product-not-shown-event
+
+git checkout -b feature/OBE-381-extend-tracking-add-tracking-event-on-quantity-picker-interactions-on-the-buy-again-page
+
+git checkout -b feature/OBE-489-update-order-history-page-tittle-in-nl
+
+git checkout -b feature/OBE-571-add-new-content-to-the-buyer-transactional-emails-for-france
+
+feature/OBE-598-extend-tracking-send-the-product-not-shown-event-in-case-the-product-hasnt-an-active-offer
+
+git checkout -b feature/OBE-380-extend-tracking-universal-ga-add-volume-price-to-google-analytics-events
+
+git checkout -b feature/OBE-455-button-as-successful-if-a-product-offer-was-not-added-to-the-cart
+
+git checkout -b feature/OBE-421-ux-design-improvements-in-tune-phase
+
+
+service-order-buyer-search/service/tests/Unit/BuyItAgain/Infrastructure/Service/BuyItAgainItemProviderTest.php
+
+FF_GA_EVENTS_BUY_AGAIN_PRODUCT_NOT_SHOWN
+
+ProductNotShown
+
+FF_GA_EVENTS_BUY_AGAIN_QUANTITY_PICKER
+
+quantity picker
+
+
+
+const missingItems = [
+        'f89b6523-f378-403e-9360-a5bc38b3ce48',
+        'e7333d3f-f8fc-4462-bcaf-479a1312eedb'
+      ],;
+      productIndexResponses.missingItems = missingItems;
+
+
+Note:
+
+70,
+
+
+https://marketplace-pp.metro.de/marktplatz/account/orders-history?_ga=2.23772730.1869582663.1681282591-1110605616.1680013981&_gl=1*12p6rtf*local_ga*MTExMDYwNTYxNi4xNjgwMDEzOTgx*local_ga_R613Q96C2Y*MTY4MTI4MTc2OS4xNy4xLjE2ODEyODQ2NzcuMTQuMC4w*_fplc*N3ZJV3B2VFNPMnRZWVlrZ0hKY1dSakpSZTcxNDlSV1RiTTBZWGtEOWEzOXhWOFU2bk0wQmslMkZUeDFYYVhjM1lkdks3SkQ1SEJBckZCUVh4OGxwU1E0JTJCcDByWFoyUlo5MTUlMkJXakJzN0xhTSUyQmVEUiUyRmZGamhGSlNsb0Y4U3NkZyUzRCUzRA..
+
+
+
+
+
+[mmTooltip],="'CATALOG.DETAILS_PAGE.OFFERS_BOX.ADD_TO_CART.PLACEHOLDER' | translate"
+
+
+
+
+git checkout -b 
+
+
+
+
+
+{{ 'CATALOG.DETAILS_PAGE.OFFERS_BOX.ADD_TO_CART.PLACEHOLDER' | translate }}
+
+BG/BNG/1716229/10145
+
+
+git checkout -b feature/OBE-399-buy-again-mvp-design-improvements
+
+git checkout -b feature/OBE-441-mvp-design-issues-we-need-to-improve
+
+git checkout -b bugfix/OBE-456-energy-label-alignment-issue
+
+git checkout -b OBE-357-ux-fe-empty-buy-again-page
+
+git checkout -b feature/OBE-357-ux-fe-empty-buy-again-page
+
+git checkout -b feature/OBE-457-mvp-design-issues-we-need-to-improve-before-go-live-3
+
+git checkout -b feature/OBE-380-extend-tracking-universal-ga-add-volume-price-to-google-analytics-events
+
+git checkout -b feature/OBE-597-fe-display-on-pdp-the-same-offer-user-saw-on-buy-again-page-when-clicked-the-product
+
+
+
+ /product/197c2d85-c7b9-4eaf-843b-3735408e9962?offerId=0b6fbe26-2dc3-439a-aa9f-0281d95129f7 
+ /product/197c2d85-c7b9-4eaf-843b-3735408e9962?offerId=0b6fbe26-2dc3-439a-aa9f-0281d95129f7
+
+I am Arunkumar Sekar and I took the basic plan.
+Basic Plan - $38.95/month
++ Rollover $5.00/month (Waived until the end of September 2023)Your India Number: +918000404471 (local: 0008000404471)Your calls will be forwarded to: +4915166130540
+But call forwarding not working.
+
+eba
+530
+780
+af1
+2cc
+
+
+Düsseldorf
+
+
+METRO Markets GmbH
+
+PostgreSQL
+
+git checkout -b feature/OBE-392-mvp-load-more-button-on-the-buy-again-page
+feature/OBE-356-buy-again-page-charts-url-added
+
+
+feature/OBE-441-design-improvements-small-fix
+
+
+Hi Vishnu priya,
+
+I am Arun Kumar Sekar from Germany. Currently, I am trying to come back to Bangalore.
+Current CTC: 60000 Euros
+Expected CTC: 25 LPA
+Notice Period: 3 Months
+
+Please let me, If you need any others details.
+
+Thank you.
+
+Hi,
+
+I am Arun Kumar Sekar from Germany. I have 10 years Experience and related framworks. The weather and environment in Germany are not suitable for my family. so, I am planning to relocate to Bangalore and I am looking for some good and suitable opportunities that match my skills and experience.
+
+PHP:  10 Years of Experience
+MVC: 9 Years of Experience 
+Current CTC: 60,000 Euros per year.
+Expected CTC: 30 to 35 LPA
+Notice Period: 3 Months
+
+
+
+
+How to increase nitric oxide naturally:
+1. Do nasal breathing 
+2. Do regular exercise 
+3. Consume more foods high in nitrates 
+4. Avoid sugar, alcohol, and stress 
+5. Improve your sleep 
+
+
+Be active—Take a dance break! Lift weights. Do push-ups or sit-ups. Or kick around a soccer ball for a few minutes.
+Close your eyes, take deep breaths, stretch, or meditate.
+Write three things you are grateful for.
+Check in with yourself—take time to ask yourself how you are feeling.
+Laugh! Think of someone who makes you laugh or the last time you laughed so hard you cried.
+Find an inspiring song or quote and write it down (or screenshot it) so you have it nearby.
+
+
+
+different between json, xml and saml
+different between rest and 
+How dependcey injuction works in symfony
+Symfony ORM
+
+
+buy_again_energy_label_triangle
+
+    width: 40px;
+    height: 23px;
+    line-height: 27px;
+
+
+    font-size: 1.28rem;
+    margin-left: 15px;
+
+
+26.2
+
+
+Docker
+
+pod - Collection of multiple containers
+
+
+
+PHP Security
+
+1. SQL injection
+
+. Insert SQL code into a web form in order to access or change data in the database
+. use parameterized queries and prepared statements to prevent the SQL injection. which will also help to ensure that only the correct data is inserted into the database.
+
+
+2. Cross-Site Scripting (XSS)
+
+
+3. Cross-site request forgery(CSRF)
+
+4. SSI
+
+
+Hi David,
+I checked with some of my colleagues and Former Employees in the Metro Markets.
+There are options to reduce the notice period by 3 to 2 months with the buyout.
+Please let me know If you need any other information.
+Thank you.
+
+Hi David,
+
+Thank you for reaching out. 
+
+I am interested the in this role and i applied this job using given link.
+
+Please let me know if you need any other details.
+
+Below i attached my updated CV for your reference.
+
+Thank you. 
+
+
+1. soild - Done
+2. design patten - Done
+3. mysql - Done.
+4. php unit
+5. Angular  - Done
+6. security - Done
+
+php update documents
+
+
+
+
+Assignment Plan
+
+Backend
+    . Api - Done
+    . Unit Test - Done
+    . Functional Test - Done
+    . Swagger Documentation - not need
+    . code quality (phpstan) - Done
+
+
+
+Frontend
+
+    . List page - Done
+    . Filter - Done
+    . Comparsion  - Done
+    . Unit Test - Done
+    . Functinal Test - Done
+
+
+extra 
+
+. Factory patton BE - Not done
+. lazy load FE - Not done
+
+
+
+
+
+Hi
+
+I am currently working at Metro Markets Gmbh in Germany, I am alreday in notice period, Next month I will return to Bengaluru. So I can start the work from 15 Nov 2023.
+
+Please contact me on WhatsApp call : +91 9994172970 or Email : arunsak91@gmail.com.
+

@@ -1,0 +1,15 @@
+Technology we using in our current project
+
+1. Pubsub - communiation between services
+2. Kafta - update database in realtime
+3. phpstan - for code quality
+4. sonarqube - test code quality
+5. phrase - translation
+6. configcat - feature flag
+7. grafana - continues moniter system.
+
+
+Need to investicate more
+
+1. Apache Kudu - Low Latency , enabling interactive analytics on large datasets - dump unused data
+2. mailler

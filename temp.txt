@@ -1,0 +1,75 @@
+Steps need to do:
+
+
+
+Common
+
+1. PHP
+2. OOPS
+3. Aglie
+4. Servies - project structure
+5. Mysql
+6. microservies
+7. rest APIs
+
+mysql index, forgien keys
+mysql commmends
+security, attacts and prevents
+
+how to store javascript code into db
+
+oops super class
+
+
+
+JD
+1. PHP
+2. Symfony
+3. JS
+4. ElasticSearch
+5. Redis
+6. Varnish
+7. MySQL you can manage hundreds of millions of entries quickly
+8. backend technologies
+
+
+
+	
+	
+
+Scope resolution operator  = (::)
+
+
+I started my career in 2013 as a junior programmer in Codeigniter framework. From then to now, I got opportunities to work on different frameworks like laravel 5.6 , symfony 3, zend and phalcon. I use mysql and postGresSQl for database. I use git and docker on a daily basis.
+
+One of my project is single sign on (SSO) system with user management, which is giving me lots of challenges and the chance to read tons of documents. I always eager to take new challenges and difficult task, because it will give me opportunities to learn new things. 
+
+Apart from company project, i have some interest to develop a chrome extension. I developed 4 of them. Now working for these updates.
+
+
+
+
+
+
+
+In my point of view following the code standard, unit and integration tests are important. new technologies and versions are emerging everyday, so we have to update ourselves.
+
+
+
+Team Lead or Software Architect
+
+
+check24 is one of the well leading company and its on the market for almost 15 years, check24 is providing services in many fields like travel,telecommunications and utility connections which give me huge opportunity to increase learning curve. I feel my skills and knowledge are well-suited to this position, so I can contribute 100% to succeed in this role.
+
+
+Marital Status Hobbies Personal Interest
+Languages Skills
+English German Tamil Kannada
+29.05.1991
+Married
+
+
+
+Hi Pablo,
+
+Sorry for the delay, I updated the form, please take a look and give me your feedback

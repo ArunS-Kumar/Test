@@ -1,0 +1,43 @@
+Note From Pervious Interview:
+
+
+
+Note from chech24.
+
+1. differnet between exception, die(), exit.
+2. what s exception
+3. mysql transaction
+4. magic methos all.
+5. strategy pattern
+6. Liskov Substitution Principle
+7. try..catch what is finaily ?
+8. mysql innodb and etc, most used db before.
+9. typecast or typehint
+10. copy on write
+11. singleton pattern, factory pattern need to look deeply.
+12. php sucrity questions
+
+
+1. Explain mysql
+2. autowiring in symfony
+3. Liskov Substitution Principle
+4. git merge vs git rebase
+
+1. git pull vs git fetch
+2. git merge vs git rebase
+3. mysql version
+4. array merge vs array colpes
+5. php print python output
+
+
+1. high level architecture
+2. generator
+3. how to read million of records
+4. advance design pattern
+5. memory usage in php
+
+
+1. Abstraction
+2. mysqul index how its working
+3. ORM disadvange
+4. Mysql normalization

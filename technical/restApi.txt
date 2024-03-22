@@ -1,0 +1,47 @@
+
+1. In RESTful APIs, HTTP methods (also known as HTTP verbs) are used to indicate the type of operation you want to perform on a resource. Each HTTP method has a specific purpose and corresponds to a specific action. Here are the commonly used HTTP methods in RESTful APIs along with their explanations:
+
+	GET: The GET method is used to retrieve information from the server. It is used to request data from a resource without modifying it. For example, when you open a webpage in a browser, the browser sends a GET request to the server to fetch the HTML, CSS, and other assets.
+
+	POST: The POST method is used to submit data to the server to create a new resource. It is often used to send data to the server for processing, like submitting a form or creating a new record in a database.
+
+	PUT: The PUT method is used to update an existing resource or replace it entirely with a new representation
+
+	eg:
+	PUT /api/products/123
+	{
+	    "name": "New Product Name",
+	    "price": 29.99
+	}
+
+
+	PATCH: The PATCH method is used to partially update an existing resource. It allows you to modify specific fields or properties of the resource without sending the complete representation
+
+	eg:
+	PATCH /api/products/123
+	{
+	    "price": 34.99
+	}
+
+
+	DELETE: The DELETE method is used to remove a resource from the server. It indicates that the client wants to delete the specified resource. It's idempotent, as multiple identical requests will have the same result as a single request.
+
+	OPTIONS: The OPTIONS method is used to request information about the communication options available for a resource. It is often used to check which HTTP methods and headers are allowed for a specific resource.
+
+	HEAD: The HEAD method is similar to GET, but it only requests the headers of a resource without fetching the actual content. It's often used to check the availability and metadata of a resource.
+
+
+
+2. The "Content-Type" header in a REST API request specifies the type of data being sent in the request body
+
+eg: 
+	. Content-Type: application/json
+	. Content-Type: application/xml
+	. Content-Type: text/plain
+
+
+3. OpenAPI
+
+	. OpenAPI, formerly known as Swagger.
+	. Is a set of specifications and tools for designing, documenting, and implementing RESTful APIs.
+	. making it easier for developers to understand, interact with, and consume APIs from various sources.

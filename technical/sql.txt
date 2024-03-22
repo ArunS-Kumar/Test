@@ -1,0 +1,136 @@
+SQL:
+
+
+1. Explain
+
+	EXPLAIN statement in MySQL is used to provide information about how MySQL executes a query and accesses tables. It helps analyze query performance and optimization
+
+
+2. Differentiate between SQL and NoSQL databases
+
+	. SQL: Well-suited for applications with structured and complex data, where maintaining data integrity and relationships is important (e.g., financial systems, CRM).
+	. NoSQL: Suitable for applications with varying data formats, large volumes, high-speed requirements, and the need for flexible schema (e.g., social media, IoT).
+
+
+3. Explain the concept of normalization and its importance
+	
+	. For example, if you have a list of customers and their orders, normalization helps you keep customer information separate from order details. This makes it easier to find things and prevents repeating the same customer information in multiple places, which can lead to confusion or mistakes
+
+4. What is the purpose of the GROUP BY clause
+
+	. The GROUP BY clause in SQL is used to group rows with similar values in one or more columns and perform aggregate functions on those groups
+	. It's commonly used with aggregate functions like COUNT, SUM, AVG, MAX, and MIN 
+
+
+5. Write a SQL query to find the second highest salary in an "employees" table
+	
+	SELECT DISTINCT salary
+	FROM employees
+	WHERE salary < (SELECT MAX(salary) FROM employees)
+	ORDER BY salary DESC
+	LIMIT 1;
+
+6. Explain the difference between UNION and UNION ALL
+
+	
+	UNION and UNION ALL are SQL set operations used to combine the result sets of multiple SELECT queries. However, they have distinct differences in how they handle duplicate rows:
+
+	UNION:
+
+		The UNION operator combines the result sets of two or more SELECT queries and returns a single result set.
+		It removes duplicate rows from the combined result set, retaining only distinct values.
+		The order of rows in the result set is not guaranteed unless you use an ORDER BY clause.
+		Syntax: SELECT column1, column2 FROM table1 UNION SELECT column1, column2 FROM table2;
+
+	UNION ALL:
+
+		The UNION ALL operator also combines the result sets of multiple SELECT queries into a single result set.
+		Unlike UNION, UNION ALL does not remove duplicate rows. It includes all rows from all SELECT queries, even if they are duplicates.
+		As a result, UNION ALL is generally faster than UNION because it doesn't involve the overhead of removing duplicates.
+		Syntax: SELECT column1, column2 FROM table1 UNION ALL SELECT column1, column2 FROM table2;
+
+
+7. What is a view? How does it differ from a table
+8. Write a SQL query to count the number of occurrences of a specific value in a column
+
+9. Explain the purpose of the HAVING clause
+	its used to filter the group by values.
+
+10. What is the difference between a clustered and a non-clustered index
+
+11. How can you optimize the performance of a slow-performing SQL query
+12. What is a self-join? Provide an example scenario
+13. Explain the difference between a candidate key, a primary key, and a foreign key
+14. What are triggers in SQL? When might you use them
+
+15. Explain the difference between stored procedures and user-defined functions
+
+	one of the store procedures is
+	Transaction Control: Stored procedures can include transaction control statements (BEGIN, COMMIT, ROLLBACK) to manage transactions.
+
+16. How can you retrieve a random row from a table
+
+	SELECT * FROM table_name
+	ORDER BY RAND()
+	LIMIT 1;
+
+
+17. What is the purpose of the CASE statement in SQL?
+
+	SELECT ProductName,
+	UnitPrice,
+	CASE
+	   WHEN UnitPrice <= 10 THEN 'Low Range'
+	   WHEN UnitPrice <= 50 THEN 'Medium Range'
+	   ELSE 'High Range'
+	END AS PriceCategory
+	FROM Products;
+
+18. Explain the difference between a database transaction and a savepoint.
+
+	START TRANSACTION;
+
+		Sql code...
+
+	COMMIT;
+
+		if any error ...
+
+	ROLLBACK;
+
+
+
+19. MySQL engines
+
+	InnoDB:
+
+		The default storage engine for MySQL since version 5.5.
+		Supports ACID transactions, row-level locking, foreign keys, and crash recovery.
+		Suitable for applications that require data integrity, concurrency, and performance.
+
+	MyISAM:
+
+		A traditional storage engine known for its simplicity and fast read operations.
+		Supports full-text search, but lacks support for transactions and foreign keys.
+		Suitable for read-heavy workloads and applications where data integrity is less critical.
+
+	Memory (HEAP):
+
+		Stores data in memory, providing extremely fast data access.
+		Useful for caching, temporary tables, and applications with low write activity.
+		Data is lost if the MySQL server is restarted.
+
+	CSV:
+
+		Stores data in a text-based CSV (Comma-Separated Values) format.
+		Suitable for data exchange or importing/exporting data.
+
+
+20. What is a primary key? Why is it important?
+
+	. A primary key is a unique identifier for each record (row) in a database table
+
+
+
+
+

@@ -1,0 +1,5 @@
+I started my career in 2013 as a junior programmer in Codeigniter framework. From then to now, I got opportunities to work on different frameworks like laravel 5.6 , symfony 3, zend and phalcon. I use mysql and postGresSQl for database. I use git and docker on a daily basis.
+
+One of my project is single sign on (SSO) system with user management, which is giving me lots of challenges and the chance to read tons of documents. I always eager to take new challenges and difficult task, because it will give me opportunities to learn new things. 
+
+Apart from company project, i have some interest to develop a chrome extension. I developed 4 of them. Now working for these updates.

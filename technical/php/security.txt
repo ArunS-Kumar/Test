@@ -1,0 +1,14 @@
+PHP Security
+
+1. SQL injection
+
+. Insert SQL code into a web form in order to access or change data in the database
+. use parameterized queries and prepared statements to prevent the SQL injection. which will also help to ensure that only the correct data is inserted into the database.
+
+
+2. Cross-Site Scripting (XSS)
+
+
+3. Cross-site request forgery(CSRF)
+
+4. SSI

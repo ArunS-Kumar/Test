@@ -1,0 +1,17 @@
+Need to prepare:
+
+1. System Design topics
+2. Design pattans
+3. Generators
+4. How to handle 1M record export in php
+5. high level architecture
+
+
+
+
+1. load balancer
+2. Lets build infrastructure for our own instagram
+3. Find specific characters in the given string
+
+
+bcwpa0224m29051991
